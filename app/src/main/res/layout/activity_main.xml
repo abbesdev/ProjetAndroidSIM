@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"><![CDATA[
+    tools:context=".MainActivity" >
+
+
+
+
+    ]]>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_margin="@dimen/cardview_default_radius"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            app:srcCompat="@drawable/ic_baseline_account_circle_24"
+            tools:srcCompat="@drawable/ic_baseline_account_circle_24" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/fullName"
+                android:layout_width="270dp"
+                android:layout_height="48dp"
+                android:hint="FullName"
+                android:textColorHint="#757575"></EditText>
+
+            <EditText
+                android:id="@+id/Age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Age"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="400dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/black"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="screen"></Space>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:visibility="visible">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#686868"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            tools:text="Gender"></TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginHorizontal="60dp"
+                    android:checked="true"
+                    android:text="Homme" />
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Femme" />
+            </RadioGroup>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:visibility="visible">
+
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="400dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/black"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="screen"></Space>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#686868"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            tools:text="Skills"></TextView>
+
+        <SeekBar
+            android:id="@+id/seek1"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:max="100"></SeekBar>
+
+        <TextView
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:text="ANDROID"
+            android:textAlignment="textEnd"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#686868"
+
+            android:textSize="20dp"
+            android:typeface="normal"
+            tools:text="ANDROID"></TextView>
+
+        <SeekBar
+            android:id="@+id/seek2"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:max="100"></SeekBar>
+
+        <TextView
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:text="iOS"
+            android:textAlignment="textEnd"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#686868"
+
+            android:textSize="20dp"
+            android:typeface="normal"
+            tools:text="iOS"></TextView>
+
+        <SeekBar
+            android:id="@+id/seek3"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:max="100"></SeekBar>
+
+        <TextView
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:text="Flutter"
+            android:textAlignment="textEnd"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#686868"
+
+            android:textSize="20dp"
+            android:typeface="normal"
+            tools:text="Flutter"></TextView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:visibility="visible">
+
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="400dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/black"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="screen"></Space>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="180dp"
+
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:text="RESET"
+            android:textAlignment="center"
+            tools:text="RESET"></Button>
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:text="NEXT"
+            tools:text="NEXT"></Button>
+    </LinearLayout>
+</LinearLayout>
